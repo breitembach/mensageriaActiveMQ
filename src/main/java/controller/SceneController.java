@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
 import java.io.IOException;
-
+/**
+ * @apiNote Scene util para obter as telas
+ * **/
 public class SceneController {
     private static FXMLLoader loader = new FXMLLoader();
     private SceneController() { }

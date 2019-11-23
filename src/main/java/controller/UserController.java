@@ -1,7 +1,9 @@
 package controller;
 
 import models.ChatUser;
-
+/**
+ * @apiNote Quando o usuário loga, fica como instancia para obter em qualquer lugar...
+ * **/
 public class UserController {
     public static UserController instance;
     private ChatUser user;

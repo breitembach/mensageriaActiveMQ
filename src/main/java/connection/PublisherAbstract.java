@@ -6,6 +6,9 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
 
+/**
+ * @apiNote Aqui a classe responsável por fazer a conexão com activeMQ Publicador
+ * **/
 public abstract class PublisherAbstract {
     private TopicConnectionFactory factory;
     private Topic topic;

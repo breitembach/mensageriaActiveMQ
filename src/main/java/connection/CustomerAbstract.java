@@ -6,6 +6,9 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
 
+/**
+ * @apiNote Aqui a classe responsável por fazer a conexão com activeMQ e listener as mensagems COMSUMIDOR
+ * **/
 public abstract class CustomerAbstract implements MessageListener {
 
     private TopicConnectionFactory factory;

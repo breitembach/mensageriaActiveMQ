@@ -23,7 +23,7 @@ public class ChatConsumer extends CustomerAbstract {
     public ChatConsumer() throws JMSException {
 
     }
-
+    // apenas uma conexao por vez
     public static synchronized ChatConsumer getInstance() throws JMSException {
         if(instance == null) {
             instance = new ChatConsumer();

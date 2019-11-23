@@ -1,26 +1,62 @@
-# mensageriaActiveMQ
+## mensageriaActiveMQ
 
 Sistema de Mensageria queues/Topic Java utilizando activeMQ
 
-Linux / Mac
-If you run on Linux or Mac, follow these steps:
+Arquitetura MAVEN
 
-cd CommandLine/Non-modular/Maven/hellofx
-To run the project:
+Authors: Lucas Breitembach & Erica Viana
 
-mvn clean javafx:run
-To create a fat jar:
+#### Dependências
 
-mvn compile package
-java -jar shade/hellofx.jar
-Windows
-If you run on Windows, follow these steps:
+* JAVAFX 13
 
-cd CommandLine\Non-modular\Maven\hellofx
-To run the project:
+* JAVA 13 ou pode funcionar também >= 11
 
-mvn compile exec:java
-To create a fat jar:
+* ActiveMQ
 
-mvn compile package
-java -jar shade\hellofx.jar
+#### Maven
+
+```clean javafx:run -U```
+
+#### Linux 
+
+Rodar o projeto:
+
+``` mvn clean javafx:run ```
+
+para criar o jar:
+
+``` mvn compile package ```
+
+``` java -jar shade/mensageriaAutoInst.jar ```
+
+
+#### Windows
+
+Rodar o projeto:
+
+``` mvn compile exec:java ```
+
+para criar o jar:
+
+``` mvn compile package ```
+
+``` java -jar shade/mensageriaAutoInst.jar ```
+
+Sem conexão com ActiveMQ
+![alt text](./screenShots/Captura_sem_conexao_activeMQ.png)
+
+entrando no chat
+![alt text](./screenShots/entrando.png)
+
+entrando com segundo usuário
+![alt text](./screenShots/entrando_segundo_usuario.png)
+
+enviando mengem chat
+![alt text](./screenShots/enviando_mengem_chat.png)
+
+enviando mengem privada por UID
+![alt text](./screenShots/enviando_mensagem_privada.png)
+
+Saindo chat
+![alt text](./screenShots/saindo_chat.png)

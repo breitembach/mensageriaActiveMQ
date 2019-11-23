@@ -14,7 +14,9 @@ import models.CustomMessage;
 import utils.Utils;
 
 import javax.jms.JMSException;
-
+/**
+ * @apiNote interface com o chat
+ * **/
 public class ChatController {
 
     public Button btnSendMessage;
@@ -29,9 +31,13 @@ public class ChatController {
 
         listView.setCellFactory(messageListView -> new MessageCell());
         try {
+            //obtem a instancia já feita anteriormente é usado singleton para não duplicar a conexão
             consumer = ChatConsumer.getInstance();
             publisher = ChatPublisher.getInstance();
+            // adiciona mensagem ao chat com o listener
             consumer.setListView(listView);
+
+            // boas vindas ao entrar ao chat
             publisher.sendWelcome(listView);
         } catch (JMSException e) {
             Alert dialogoErro = new Alert(Alert.AlertType.ERROR);

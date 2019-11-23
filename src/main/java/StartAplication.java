@@ -17,7 +17,9 @@ import models.ChatUser;
 import javax.jms.JMSException;
 import java.util.concurrent.ExecutionException;
 
-
+/**
+ * @apiNote Inicialização do app e comunicação da primeira tela
+ * **/
 public class StartAplication extends Application {
     public Stage window;
     public TextField textFieldFullName;

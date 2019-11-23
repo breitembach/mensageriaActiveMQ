@@ -4,8 +4,12 @@ import javafx.scene.control.ListCell;
 import javafx.scene.image.Image;
 import models.CustomMessage;
 
+/**
+ * @apiNote Formata cada mensagem entrada no chat
+ * imagem não funcionando :\
+ * **/
 public class MessageCell extends ListCell<CustomMessage> {
-    private final Image IMAGE_APPLE  = new Image("http://findicons.com/files/icons/832/social_and_web/64/apple.png",50.0,50.0,true,false);
+//    private final Image IMAGE_APPLE  = new Image("http://findicons.com/files/icons/832/social_and_web/64/apple.png",50.0,50.0,true,false);
 
     @Override
     public void updateItem(CustomMessage item, boolean empty)
