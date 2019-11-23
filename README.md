@@ -13,6 +13,7 @@ Authors: Lucas Breitembach & Erica Viana
 * JAVA 13 ou pode funcionar também >= 11
 
 * ActiveMQ
+```> activeMQ console```
 
 * Maven
 
@@ -21,7 +22,17 @@ Authors: Lucas Breitembach & Erica Viana
 
 ```clean javafx:run -U```
 
-#### Linux 
+#### Linux
+ 
+instalar JDK:
+
+```sudo apt-get install openjdk-<version>```
+
+Mudar de JDK:
+
+```
+sudo update-alternatives --config java 
+```
 
 Rodar o projeto:
 
@@ -33,8 +44,9 @@ para criar o jar:
 
 ``` mvn compile package ```
 
-``` java -jar shade/mensageriaAutoInst.jar ```
+```sudo chmod+x mensageriaAutoInst.jar```
 
+``` java -jar shade/mensageriaAutoInst.jar ```
 
 #### Windows
 
