@@ -14,13 +14,18 @@ Authors: Lucas Breitembach & Erica Viana
 
 * ActiveMQ
 
+* Maven
+
 #### Maven
+```mvn install```
 
 ```clean javafx:run -U```
 
 #### Linux 
 
 Rodar o projeto:
+
+```mvn install```
 
 ``` mvn clean javafx:run ```
 
@@ -34,6 +39,8 @@ para criar o jar:
 #### Windows
 
 Rodar o projeto:
+
+```mvn install```
 
 ``` mvn compile exec:java ```
 
